@@ -1,0 +1,152 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    border: solid black;
+    margin: 2px;
+    display: block;
+    grid-template-columns: ;
+}
+header img{
+    height: 60px;
+    width: 70px;
+    
+}
+nav{
+    margin-left: 600px;
+
+} *//
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white ;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+header img{
+    height: 60px;
+    width: 70px;
+    object-fit: cover;
+    
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: orangered;
+    background-color: white;
+    
+}
+
+/* Section styles */
+.food-items-1 {
+    padding: 20px 20px; /* Top padding to prevent content from being hidden by the fixed header */
+    text-align: center;
+    margin: 0px 200px;
+}
+.food-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.card{
+height: 200px;
+position: relative;
+  display: inline-block;
+
+}
+.card img {
+    height: 150px;
+    width:200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add this line */
+    display: block;
+}
+.text-overlay {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to bottom, transparent, rgba(50, 50, 50, 0.8));
+  backdrop-filter: blur(10px);
+  }
+
+  .suggestions-1{
+
+    margin: 10% 8%;
+  }
+  .suggestions-12{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:25px;
+    border: 2px;
+  }
+  .suggestions-123{
+
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px;
+    
+  }
+
+
+ footer {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #02060C;
+    color: #FFFFFF99;
+    height: 400px;
+    padding: 10px;
+margin:0px;
+}
+.footerr{
+margin: 5% 18%;
+display: flex;
+}
+
+td img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin-left: 0px;
+    filter: brightness(0) invert(1); 
+}
+.footer-help{
+margin-left: 10%;
+}
